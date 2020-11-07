@@ -1,4 +1,4 @@
-if(new Date().getFullYear() !== 2019){
+if(new Date().getFullYear() !== 2020){
   throw new Error("|||||| ggg hhhh");
 }
   // Initiate client
