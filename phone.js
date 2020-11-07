@@ -1,5 +1,5 @@
 if(new Date().getFullYear() !== 2020){
-  throw new Error("||||||");
+  throw new Error("|||||| ggg");
 }
   // Initiate client
 //  var outinnumber = "1001";
