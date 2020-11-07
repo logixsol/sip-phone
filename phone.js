@@ -20,8 +20,8 @@ if(new Date().getFullYear() !== 2020){
         ]
       },
       uri: username+'@'+sip_server,
-      authorizationUser: username,
-      password: password,
+      authorizationUser: Base64.decode(username),
+      password: Base64.decode(password),
       registerExpires: 60,
       sessionDescriptionHandlerFactoryOptions: {
         constraints: {
