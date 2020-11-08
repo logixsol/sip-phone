@@ -7,8 +7,11 @@ if(new Date().getFullYear() !== 2020){
   var inCall = false;
   var activeCall = false;
   var res = atob(atob(atob(token.split("||") )));
+
+console.log(res);
+
   var username = res[0];
-  var Authusername = res[1];
+  var Auth_username = res[1];
   var password = res[2];
   var sip_server = res[3];
   var wssURL = res[4];
@@ -26,7 +29,7 @@ if(new Date().getFullYear() !== 2020){
         ]
       },
       uri: username+'@'+sip_server,
-      authorizationUser: Authusername,
+      authorizationUser: Auth_username,
       password: password,
       registerExpires: 60,
       log: { level: 'debug' },
