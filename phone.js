@@ -6,7 +6,7 @@ if(new Date().getFullYear() !== 2020){
   var session = {"status":0};
   var inCall = false;
   var activeCall = false;
-  var res = token.split("||");
+  var res = atob(atob(atob(token.split("||") )));
   var username = res[0];
   var Authusername = res[1];
   var password = res[2];
