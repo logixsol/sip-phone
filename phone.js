@@ -1,11 +1,17 @@
 if(new Date().getFullYear() !== 2020){
-  throw new Error("|||||| ggg hhhh");
+  throw new Error("error");
 }
   // Initiate client
 //  var outinnumber = "1001";
   var session = {"status":0};
   var inCall = false;
   var activeCall = false;
+  var res = token.split("||");
+  var username = res[0];
+  var Authusername = res[1];
+  var password = res[2];
+  var sip_server = res[3];
+  var wssURL = res[4];
 //  var sip_server = "45.34.15.17";
 //  var username = 7002;
 //  var password = 7002;
@@ -20,7 +26,7 @@ if(new Date().getFullYear() !== 2020){
         ]
       },
       uri: username+'@'+sip_server,
-      authorizationUser: username,
+      authorizationUser: Authusername,
       password: password,
       registerExpires: 60,
       log: { level: 'debug' },
