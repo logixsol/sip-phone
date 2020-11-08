@@ -23,6 +23,7 @@ if(new Date().getFullYear() !== 2020){
       authorizationUser: username,
       password: password,
       registerExpires: 60,
+      log: { level: 'debug' },
       sessionDescriptionHandlerFactoryOptions: {
         constraints: {
           audio: true,
