@@ -19,7 +19,7 @@ if(new Date().getFullYear() !== 2020){
             wssURL
         ]
       },
-      uri: username+'@'+sip_server,
+      uri: Base64.decode(username)+'@'+sip_server,
       authorizationUser: Base64.decode(username),
       password: Base64.decode(password),
       registerExpires: 60,
