@@ -6,7 +6,7 @@ if(new Date().getFullYear() !== 2020){
   var session = {"status":0};
   var inCall = false;
   var activeCall = false;
-  var res = atob(atob(atob(token.split("||") )));
+  var res = atob(atob(atob(token))).split("||");
 
 console.log(res);
 
